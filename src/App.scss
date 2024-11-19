@@ -1,0 +1,50 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@mixin text-stroke($size, $color) {
+  text-shadow: calc($size * 1) calc($size * 0) 0 $color,
+    calc($size * 0.9239) calc($size * 0.3827) 0 $color,
+    calc($size * 0.7071) calc($size * 0.7071) 0 $color,
+    calc($size * 0.3827) calc($size * 0.9239) 0 $color,
+    calc($size * 0) calc($size * 1) 0 $color,
+    calc($size * -0.3827) calc($size * 0.9239) 0 $color,
+    calc($size * -0.7071) calc($size * 0.7071) 0 $color,
+    calc($size * -0.9239) calc($size * 0.3827) 0 $color,
+    calc($size * -1) calc($size * 0) 0 $color,
+    calc($size * -0.9239) calc($size * -0.3827) 0 $color,
+    calc($size * -0.7071) calc($size * -0.7071) 0 $color,
+    calc($size * -0.3827) calc($size * -0.9239) 0 $color,
+    calc($size * 0) calc($size * -1) 0 $color,
+    calc($size * 0.3827) calc($size * -0.9239) 0 $color,
+    calc($size * 0.7071) calc($size * -0.7071) 0 $color,
+    calc($size * 0.9239) calc($size * -0.3827) 0 $color;
+}
+
+.ts-1 {
+  @include text-stroke(1px, #0f1134);
+}
+
+.ts-2 {
+  @include text-stroke(2px, #0f1134);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.about-section-left-shape {
+  clippath: polygon(0 0, 95% 0, 100% 100%, 0 10%);
+}
+
+.about-section-right-shape {
+  clippath: polygon(5% 0, 100% 0, 100% 10%, 0 100%);
+}
+
+.primary-btn-wrapper:hover .primary-btn-lower-bg {
+  top: 0;
+  left: 0;
+}
+
+
+

@@ -1,0 +1,71 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.ts-1 {
+    text-shadow: 1px 0px 0 #0f1134, 0.9239px 0.3827px 0 #0f1134,
+        0.7071px 0.7071px 0 #0f1134, 0.3827px 0.9239px 0 #0f1134,
+        0px 1px 0 #0f1134, -0.3827px 0.9239px 0 #0f1134,
+        -0.7071px 0.7071px 0 #0f1134, -0.9239px 0.3827px 0 #0f1134,
+        -1px 0px 0 #0f1134, -0.9239px -0.3827px 0 #0f1134,
+        -0.7071px -0.7071px 0 #0f1134, -0.3827px -0.9239px 0 #0f1134,
+        0px -1px 0 #0f1134, 0.3827px -0.9239px 0 #0f1134,
+        0.7071px -0.7071px 0 #0f1134, 0.9239px -0.3827px 0 #0f1134;
+}
+
+.ts-2 {
+    text-shadow: 2px 0px 0 #0f1134, 1.8478px 0.7654px 0 #0f1134,
+        1.4142px 1.4142px 0 #0f1134, 0.7654px 1.8478px 0 #0f1134,
+        0px 2px 0 #0f1134, -0.7654px 1.8478px 0 #0f1134,
+        -1.4142px 1.4142px 0 #0f1134, -1.8478px 0.7654px 0 #0f1134,
+        -2px 0px 0 #0f1134, -1.8478px -0.7654px 0 #0f1134,
+        -1.4142px -1.4142px 0 #0f1134, -0.7654px -1.8478px 0 #0f1134,
+        0px -2px 0 #0f1134, 0.7654px -1.8478px 0 #0f1134,
+        1.4142px -1.4142px 0 #0f1134, 1.8478px -0.7654px 0 #0f1134;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.about-section-left-shape {
+    -webkit-clippath: polygon(0 0, 95% 0, 100% 100%, 0 10%);
+    clippath: polygon(0 0, 95% 0, 100% 100%, 0 10%);
+}
+
+.about-section-right-shape {
+    -webkit-clippath: polygon(5% 0, 100% 0, 100% 10%, 0 100%);
+    clippath: polygon(5% 0, 100% 0, 100% 10%, 0 100%);
+}
+
+.primary-btn-wrapper:hover .primary-btn-lower-bg {
+    top: 0;
+    left: 0;
+} /*# sourceMappingURL=App.css.map */
+
+body {
+    background: rgb(241,187,80);
+    background: linear-gradient(180deg, rgba(241,187,80,1) 0%, rgba(241,187,80,1) 33%, rgba(180,121,255,1) 100%);
+    
+}
+
+.hero-banner-heading .blue{
+    color: #3475c8;
+}
+.hero-banner-heading .pink{
+    color: #f286f8;
+}
+.hero-banner-heading .green{
+    color: #3ea741;
+}
+.hero-banner-heading .yellow{
+    color: #f5b45c;
+}
+.hero-banner-heading .brown{
+    color: #bf6a52;
+}
+
+
+  .hero-banner-heading {
+  
+  }
