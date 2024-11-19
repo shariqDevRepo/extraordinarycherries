@@ -1,25 +1,22 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';  // You should use React Router here, not Next.js
 
 const ScrollToSection = () => {
-    const location = useLocation();
+  const location = useLocation();
 
-    useEffect(() => {
-        if (location.hash) {
-            // Scroll to the section if a hash is present
-            const sectionId = location.hash.replace("#", "");
-            const element = document.getElementById(sectionId);
+  useEffect(() => {
+    if (location.hash) {
+      // Extract the section ID from the URL hash
+      const sectionId = location.hash.replace('#', '');
+      const element = document.getElementById(sectionId);
 
-            if (element) {
-                element.scrollIntoView({ behavior: "smooth" });
-            }
-        } else {
-            // Scroll to the top when navigating to a new page
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        }
-    }, [location.pathname, location.hash]);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  }, [location.hash]);  // Re-run this effect when the hash in the URL changes
 
-    return null; // No UI, just functionality
+  return null; // This component does not render anything
 };
 
 export default ScrollToSection;

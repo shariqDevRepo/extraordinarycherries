@@ -60,7 +60,7 @@ const NavigationBar = ({
                         <ul className="hidden xl:flex gap-8">
                             <NavItem
                                 title="About"
-                                url="/#about"
+                                url="#about"
                                 isSection={true}
                                 setIsOpened={setIsOpened}
                             />
@@ -309,7 +309,7 @@ const NavigationBar = ({
                             <ul className="flex flex-col justify-center items-center gap-4">
                                 <NavItem
                                     title="About"
-                                    url="/#about"
+                                    url="#about"
                                     isSection={true}
                                     setIsOpened={setIsOpened}
                                 />
