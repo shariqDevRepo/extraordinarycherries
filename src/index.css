@@ -137,3 +137,17 @@
   }
 }
 
+@media (max-width:530px) {
+  .mobile-icon-width{
+  width: 125px;
+  }    
+}
+
+@media (max-width:420px) {
+  .mobile-icon-width{
+    flex-wrap: wrap;
+    width: 100px;
+    padding: 10px 0;
+  }    
+}
+

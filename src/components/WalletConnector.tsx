@@ -16,7 +16,7 @@ const WalletConnector = ({
 
     const handleCloseModal = () => {
         setIsOpen(false); // Close the modal
-        localStorage.setItem("popupClosed", "true"); // Mark it as closed in localStorage
+        sessionStorage.setItem("popupClosed", "true"); // Mark it as closed in localStorage
     };
 
     useEffect(() => {
@@ -89,7 +89,7 @@ const WalletConnector = ({
 
             // Check localStorage for popupClosed flag on mount
             useEffect(() => {
-                const popupClosed = localStorage.getItem("popupClosed");
+                const popupClosed = sessionStorage.getItem("popupClosed");
                 if (!popupClosed) {
                     setIsOpen(true); // Show the popup if not closed before
                 }

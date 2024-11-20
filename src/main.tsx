@@ -22,7 +22,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
         <ToastContainer theme="colored" position="bottom-right" />
-
         <BrowserRouter>
         <ScrollToSection />
           <App />

@@ -58,12 +58,28 @@ const NavigationBar = ({
                 <div className="relative mx-auto container py-12 sm:py-14 px-4 sm:px-12">
                     <div className="h-[60px] lg:h-[80px] px-5 lg:px-8 bg-[#884BAC] border border-white/25 rounded-full flex justify-between items-center">
                         <ul className="hidden xl:flex gap-8">
-                            <NavItem
+                           
+                            {/* <NavItem
                                 title="About"
-                                url="#about"
+                                url="/#about"
                                 isSection={true}
                                 setIsOpened={setIsOpened}
-                            />
+                            /> */}
+
+                            <li data-aos="zoom-in" data-aos-delay="300">
+                            <Link
+                                to="/#about"
+                                className="font-secondary uppercase text-white hover:text-[#EEB13A] ts-1 duration-200" 
+                                // isSection={true}
+                                // setIsOpened={setIsOpened}
+                                onClick={() => {
+                                    setIsOpened(false); // Ensure the menu closes when the link is clicked
+                                }}
+                                >
+                                About
+                                </Link>
+                            </li>
+
                             <NavItem
                                 title="Contest"
                                 url="/contest"
@@ -105,7 +121,7 @@ const NavigationBar = ({
                         </ul>
 
                         <div className="flex items-center gap-8">
-                            <div className="flex items-center gap-2 sm:gap-2 ">
+                            <div className="flex items-center gap-2 sm:gap-2 mobile-icon-width">
                                 <Link
                                     data-aos="zoom-in"
                                     to={socialLinks.discord}
@@ -309,7 +325,7 @@ const NavigationBar = ({
                             <ul className="flex flex-col justify-center items-center gap-4">
                                 <NavItem
                                     title="About"
-                                    url="#about"
+                                    url="/#about"
                                     isSection={true}
                                     setIsOpened={setIsOpened}
                                 />
@@ -331,6 +347,12 @@ const NavigationBar = ({
                                     isSection={false}
                                     setIsOpened={setIsOpened}
                                 />
+                                 <NavItem
+                                title="Milestone"
+                                url="/milestone"
+                                isSection={false}
+                                setIsOpened={setIsOpened}
+                            />
                             </ul>
 
                             <div

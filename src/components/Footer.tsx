@@ -18,36 +18,43 @@ const Footer = () => {
 
                 <ul className="mt-8 flex flex-wrap justify-center gap-y-4 gap-x-8">
                     <li data-aos="zoom-in">
-                        <a
-                            href="/#about"
+                        <Link
+                            to="/#about"
                             className="font-secondary uppercase text-white hover:text-[#EEB13A] ts-1 duration-200"
                         >
                             About
-                        </a>
+                        </Link>
                     </li>
+                 
                     <li data-aos="zoom-in" data-aos-delay="100">
-                        <a
-                            href="#roadmap"
+                        {/* <a
+                            href="/#roadmap"
                             className="font-secondary uppercase text-white hover:text-[#EEB13A] ts-1 duration-200"
                         >
                             Roadmap
-                        </a>
+                        </a> */}
+                          <Link
+                            to="/#roadmap" // Use 'to' with the section ID
+                            className="font-secondary uppercase text-white hover:text-[#EEB13A] ts-1 duration-200"
+                        >
+                             Roadmap
+                        </Link>
                     </li>
                     <li data-aos="zoom-in" data-aos-delay="200">
-                        <a
-                            href="#backstory"
+                        <Link
+                            to="/#backstory"
                             className="font-secondary uppercase text-white hover:text-[#EEB13A] ts-1 duration-200"
                         >
                             Backstory
-                        </a>
+                        </Link>    
                     </li>
                     <li data-aos="zoom-in" data-aos-delay="300">
-                        <a
-                            href="#team"
+                    <Link
+                            to="/#team"
                             className="font-secondary uppercase text-white hover:text-[#EEB13A] ts-1 duration-200"
                         >
                             Team
-                        </a>
+                            </Link>
                     </li>
                     <li data-aos="zoom-in" data-aos-delay="400">
                         <Link
