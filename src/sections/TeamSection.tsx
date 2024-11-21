@@ -23,7 +23,7 @@ const TeamSection = () => {
 
             <div className="p-5 border border-[#0F1134] bg-white rounded-2xl">
               <h4 className="font-secondary text-xl sm:text-2xl text-center uppercase text-[#0F1134]">
-                Member 1
+                  Kirk  Awesome
               </h4>
 
               <p className="font-medium text-center text-[#0F1134]">Founder</p>
@@ -39,10 +39,10 @@ const TeamSection = () => {
 
             <div className="p-5 border border-[#0F1134] bg-white rounded-2xl">
               <h4 className="font-secondary text-xl sm:text-2xl text-center uppercase text-[#0F1134]">
-                Member 2
+                Say Cheese 
               </h4>
 
-              <p className="font-medium text-center text-[#0F1134]">Artist</p>
+              <p className="font-medium text-center text-[#0F1134]">Founder</p>
             </div>
           </div>
 
@@ -55,7 +55,7 @@ const TeamSection = () => {
 
             <div className="p-5 border border-[#0F1134] bg-white rounded-2xl">
               <h4 className="font-secondary text-xl sm:text-2xl text-center uppercase text-[#0F1134]">
-                Member 3
+                Genius 
               </h4>
 
               <p className="font-medium text-center text-[#0F1134]">
